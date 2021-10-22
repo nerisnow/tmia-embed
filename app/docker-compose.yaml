@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tmia-embed
+    container_name: tmia-embed-fastapi
+    ports:
+      - 80:80
+    restart: always
+    runtime: nvidia

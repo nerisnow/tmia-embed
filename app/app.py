@@ -23,7 +23,7 @@ class Query(BaseModel):
 
 app = FastAPI()
 
-model = SentenceTransformer(cache_folder="./models")
+model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
 
 @app.get("/")
 async def home():
