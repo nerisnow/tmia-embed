@@ -6,7 +6,7 @@ from functools import lru_cache
 
 from sentence_transformers import SentenceTransformer
 
-from src import config, utils
+from src import config
 
 # logger = utils.create_logger(project_name=config.PREDICTION_TYPE, level="INFO")
 
